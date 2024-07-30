@@ -1,2 +1,2 @@
-# codex
+# codx
 Landing page
