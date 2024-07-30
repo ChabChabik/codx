@@ -1,0 +1,180 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline: 2px solid green;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: currentColor;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    outline: 2px solid blue;
+}
+
+/* Header */
+.header-container,
+.header-left,
+.header-right,
+.header-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+
+}
+
+.container {
+
+}
+
+.header-container {
+
+}
+
+.header-left {
+
+}
+
+.header-logo {
+
+}
+
+.header-nav {
+
+}
+
+.header-list {
+
+}
+
+.header-item {
+
+}
+
+.header-link {
+
+}
+
+.header-right {
+
+}
+
+/* header */
+.hero {
+
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 49%;
+    flex-wrap: wrap;
+}
+
+.hero-left,
+.hero-right {
+    max-width: 49%;
+}
+
+.hero-text {
+
+}
+
+.hero-text-green {
+
+}
+
+.hero-title {
+
+}
+
+.hero-right {
+
+}
+
+.hero-boy {
+
+}
+
+.hero-about {
+
+}
+
+.hero-ava {
+
+}
+
+.hero-about__inner {
+
+}
+
+.hero-name {
+
+}
+
+.hero-post {
+
+}
+
+.hero-girl {
+
+}
+
+.hero-about__name {
+
+}
+
+/* carousel */
+.swiper {
+    width: 100%;
+    height: 152px;
+  }
+
+.swiper-slide {
+    width: 152px !important;
+    height: 152px;
+}
+
+.carousel-container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+}
