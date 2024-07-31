@@ -418,24 +418,17 @@ li:nth-child(3):before {
 }
 
 /* Collections */
-.collections-container {
-
-}
-
-.about-title {
-
-}
-
 .collections-list {
     margin-top: 73px;
     margin-bottom: 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .collections-item {
-    max-width: 33%;
+    /* max-width: 33%; */
     border-radius: 30px;
 }
 
@@ -454,4 +447,61 @@ li:nth-child(3):before {
     margin-top: 29px;
     padding-left: 50px;
     margin-bottom: 37px;
+}
+
+/* NFT */
+.nft-container {
+
+}
+
+.nft-list {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nft-itme {
+   
+}
+
+.nft-img {
+
+}
+
+.nft-items {
+    margin-bottom: 40px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nft-name {
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-btn);
+}
+
+.nft-number {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nft-number + img {
+    margin-right: 8px;
+}
+
+.btn {
+
+}
+
+.collections-btn {
+
+}
+
+.btn-center {
+
 }
