@@ -4,6 +4,7 @@
     --color-btn: rgba(47, 47, 47, 1);
     --color-green: rgba(130, 203, 172, 1);
     --color-ava: rgba(250, 246, 246, 0.8);
+    --color-red: rgba(255, 127, 150, 1);
 }
 
 html {
@@ -21,6 +22,25 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+h4 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 36px;
 }
 
 ul {
@@ -52,6 +72,8 @@ img {
     outline: 2px solid blue;
 }
 
+.nav-pills .nav-link,
+.nav-pills .nav-link.active,
 .btn {
     width: 144px;
     height: 40px;
@@ -62,8 +84,9 @@ img {
     background-color: var(--color-btn);
 }
 
+.nav-pills .nav-link,
 .btn:hover {
-    border: 2px solid var(--color-btn);
+    border: 1px solid var(--color-btn);
     transition: background-color 0.25s linear;
 }
 
@@ -106,15 +129,13 @@ img {
     margin-right: 19px;
 }
 
+.nav-pills .nav-link,
+.nav-pills .nav-link.active,
 .header-btn {
     border-radius: 20px;
 }
 
-/* header */
-.hero {
-
-}
-
+/* Hero */
 .hero-container {
     min-height: 740px;
     display: flex;
@@ -181,14 +202,6 @@ img {
     background-color: var(--color-ava);
 }
 
-.hero-ava {
-
-}
-
-.hero-about__inner {
-
-}
-
 .hero-name,
 .hero-post {
     font-size: 11px;
@@ -239,4 +252,69 @@ img {
     margin-left: 0;
     margin-right: 0;
     max-width: 100%;
+}
+
+/* About */
+.about-title__small {
+    text-align: center;
+    max-width: 610px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+.nav-pills .nav-link {
+    margin-right: 8px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.about-tab__container {
+    min-height: 459px;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 49%;
+}
+
+.about-tab__container > * {
+    width: 50%;
+    padding-top: 64px;
+}
+
+.about-ava {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-ava__fix {
+    padding-top: 130px;
+    height: auto;
+}
+
+.about-fix {
+    margin-left: 25%;
+    width: 40%;
+    height: auto;
+}
+
+.about-post {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 47px;
+    margin-bottom: 19px;
+    color: var(--color-red);
+}
+
+.about-tab__title {
+    padding-right: 211px;
+    margin-bottom: 16px;
+
+}
+
+.about-text {
+    padding-right: 75px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
 }
