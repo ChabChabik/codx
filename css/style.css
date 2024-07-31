@@ -5,6 +5,7 @@
     --color-green: rgba(130, 203, 172, 1);
     --color-ava: rgba(250, 246, 246, 0.8);
     --color-red: rgba(255, 127, 150, 1);
+    --color-yellow: rgba(234, 215, 27, 1);
 }
 
 html {
@@ -78,7 +79,6 @@ img {
     width: 144px;
     height: 40px;
     font-size: 13px;
-    line-height: 1;
     color: var(--color-white);
     font-weight: 400;
     background-color: var(--color-btn);
@@ -123,6 +123,7 @@ img {
     color: var(--color-black);
     font-style: 15px;
     font-weight: 400;
+    text-wrap: nowrap;
 }
 
 .header-social {
@@ -255,6 +256,10 @@ img {
 }
 
 /* About */
+.about-container {
+    margin-bottom: 66px;
+}
+
 .about-title__small {
     text-align: center;
     max-width: 610px;
@@ -317,4 +322,97 @@ img {
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
+}
+
+/* Work */
+.work-top,
+.work-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 84px;
+}
+
+.work-top {
+    margin-bottom: 48px;
+}
+
+
+.work-list,
+.work-sketch__description,
+.work-sketch {
+    width: 49%;
+}
+
+.work-title {
+    margin-bottom: 38px;
+    text-align: left;
+}
+
+.work-sketch__description {
+    padding: 62px 0 62px 48px;
+}
+
+.work-text {
+    margin-bottom: 32px;
+}
+
+.work-btn {
+    display: block;
+    margin-left: auto;
+}
+
+.work-list {
+    padding: 104px 90px 64px 64px;
+}
+
+ol {
+    /* USEFULL EXAMPLE */
+    /* list-style-type: decimal-leading-zero; */
+    /* list-style-position: inside; */
+    list-style-type: none;
+    counter-reset: my-counter;
+}
+
+ol li {
+    position: relative;
+}
+
+li::before {
+    /* USEFULL EXAMPLE */
+    /* content: counter(my-counter); */
+    content: counters(my-counter, "." , decimal-leading-zero);
+    counter-increment: my-counter;
+    top: -40px;
+    left: 0;
+    width: 61px;
+    height: 35px;
+    border-radius: 30px;
+    color: var(--color-white);
+    background-color: var(--color-green);
+    position: absolute;
+    text-align: center;
+}
+
+li:nth-child(2):before {
+    background-color: var(--color-red);
+}
+
+li:nth-child(3):before {
+    background-color: var(--color-yellow);
+}
+
+.work-item__title {
+    margin-bottom: 13px;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-btn);
+}
+
+.work-bottom__img {
+    max-width: 596px;
+}
+
+.work-item > .work-text {
+    margin-bottom: 72px;
 }
