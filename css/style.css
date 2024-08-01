@@ -6,10 +6,18 @@
     --color-ava: rgba(250, 246, 246, 0.8);
     --color-red: rgba(255, 127, 150, 1);
     --color-yellow: rgba(234, 215, 27, 1);
+    --color-placeholder: rgba(47, 47, 47, 0.36);
 }
 
 html {
     font-family: 'Gill Sans', 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after,
+* {
+    box-sizing: inherit;
 }
 
 body {
@@ -18,11 +26,7 @@ body {
     margin-right: auto;
     padding-top: 15px;
     padding-bottom: 15px;
-    outline: 2px solid green;
-}
-
-* {
-    box-sizing: border-box;
+    /* outline: 2px solid green; */
 }
 
 h2 {
@@ -70,7 +74,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
 }
 
 .nav-pills .nav-link,
@@ -314,7 +318,7 @@ img {
 .about-tab__title {
     padding-right: 211px;
     margin-bottom: 16px;
-
+    font-size: 35px;
 }
 
 .about-text {
@@ -450,24 +454,12 @@ li:nth-child(3):before {
 }
 
 /* NFT */
-.nft-container {
-
-}
-
 .nft-list {
     margin-top: 16px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.nft-itme {
-   
-}
-
-.nft-img {
-
 }
 
 .nft-items {
@@ -494,14 +486,149 @@ li:nth-child(3):before {
     margin-right: 8px;
 }
 
-.btn {
+/* Faq */
+.faq-container {
+    padding-bottom: 62px;
+    margin-bottom: 40px;
+}
+
+.faq-title {
+    text-align: left;
+    margin-left: 64px;
+}
+
+.accordion {
+    margin-left: 64px;
+    margin-right: 64px;
+    padding-left: 26px;
+     margin-top: 25px;
+}
+
+.accordion-button {
+    font-size: 22px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(46,207,31,0.1);
+    box-shadow: none;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.accordion-item {
+    border: none;
+    font-size: 18px;
+}
+
+.accordion-button:focus {
+    box-shadow: 0px 0px 7px 6px rgba(46,207,31,0.1);
+    box-shadow:none;
+}
+
+.accordion-button::after {
+    background-image: url('/img/faq-sign.svg')
+}
+
+/* Footer */
+.footer-container {
+    padding: 96px 64px 25px 64px;
+}
+
+.footer-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-social {
+    display: flex;
+    align-items: flex-start;
+    gap: 19px;
+}
+
+.footer-item:last-child {
+    max-width: 460px;
+}
+
+.footer-logo {
+    margin-right: 63px;
+}
+
+.footer-social__title {
+    margin-top: 45px;
+    margin-bottom: 19px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+}
+
+.footer-title__list {
+    gap: 8px;
+}
+
+.footer-title {
+    margin-bottom: 25px;
+    color: #2F2F2F;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer-title__item {
+    color: inherit;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-form > .about-tab__title {
+    line-height: 1;
+}
+
+.footer-text {
+    padding-right: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+}
+
+.footer-input {
+    min-width: 327px;
+    height: 40px;
+    padding: 12px 32px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(246, 246, 246, 1);
+    gap: 8px;
+}
+
+.footer-input::placeholder {
+    color: var(--color-placeholder);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    line-height: 1;
+}
+
+.footer-btn {
+    width: 79px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.footer-copiright {
+    margin-top: 118px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-.collections-btn {
-
+.footer-copiright > small {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
 }
 
-.btn-center {
-
+small > span {
+    color: var(--color-red);
 }
